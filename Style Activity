@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imagenf"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/respuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:textColor="#0B0C0C"
+        android:textSize="30sp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/numero1"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_weight="1"
+        android:background="@drawable/ovalo"
+        android:ems="10"
+        android:hint="Escribe un numero"
+        android:gravity="center"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/numero2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:background="@drawable/ovalo"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Escribe un numero"
+        android:inputType="number"
+        android:textColor="#FFFFFF" />
+
+    <TableLayout
+        android:layout_width="346dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button_suma"
+                android:layout_width="177dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:background="@drawable/ovalo2"
+                android:text="Suma"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
